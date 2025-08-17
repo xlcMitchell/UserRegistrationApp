@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="true"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal"
@@ -37,7 +38,8 @@
  <!--SCROLL VIEW FOR ELEMENTS SO USER CAN SCROLL DOWN AND SEE-->
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_weight="1">
 <!--SCROLL VIEW CAN ONLY HAVE ONE CHILD SO ANOTHER LINEAR LAYOUT-->
  <LinearLayout
     android:layout_height="match_parent"
@@ -225,7 +227,110 @@
              android:layout_width="match_parent"
              android:hint="Email"/>
      </LinearLayout>
+
+     <!--Linear Layout For Password-->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp"
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Password"
+             android:textSize="20sp"
+             android:textStyle="bold"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20sp"
+             android:textStyle="bold"/>
+
+         <EditText
+             android:id="@+id/regPW"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:inputType="textPassword"
+             android:hint="Passowrd"/>
+     </LinearLayout>
+      <!--Re enter password Linear Layout-->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Renter Password"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+
+         <EditText
+             android:id="@+id/regPW2"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:inputType="textPassword"
+             android:hint="Reenter Password"/>
+     </LinearLayout>
  </LinearLayout>
     </ScrollView>
+    <!--Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Divider / line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/line_color" />
+
+        <!-- Button Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/userRegButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="Register" />
+
+            <Button
+                android:id="@+id/userResetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Reset" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

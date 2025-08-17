@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_secondary"
+        android:padding="15dp"
+        android:text="User Registration"
+        android:textAlignment="center"
+        android:textColor="@color/color_on_secondary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background_color="@color/line_color"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom = "2dp"/>
+
+
+</LinearLayout>
+ <!--SCROLL VIEW FOR ELEMENTS SO USER CAN SCROLL DOWN AND SEE-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--SCROLL VIEW CAN ONLY HAVE ONE CHILD SO ANOTHER LINEAR LAYOUT-->
+ <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:margin_left="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="First Name"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="*"
+        android:textColor="@color/line_color"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/regFirstName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="First Name"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:margin_left="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Last Name"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="*"
+            android:textColor="@color/line_color"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/regLastName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Last Name"/>
+
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp"
+         android:margin_left="10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Date of Birth"
+             android:textSize="20dp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20dp"
+             android:textStyle="bold" />
+
+
+         <DatePicker
+             android:id="@+id/RegUserDate"
+             android:layout_width="250dp"
+             android:layout_height="400dp" />
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:margin_left="10dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp">
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Mobile"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+
+         <EditText
+             android:id="@+id/regMobile"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="First Name"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:margin_left="10dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp">
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Address"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+
+         <EditText
+             android:id="@+id/regAddress"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="Address"/>
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:margin_left="10dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="10dp">
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="Email"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+         <TextView
+             android:layout_width = "wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:text="*"
+             android:textColor="@color/line_color"
+             android:textSize="20dp"
+             android:textStyle="bold"/>
+
+         <EditText
+             android:id="@+id/regEmail"
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:hint="Email"/>
+     </LinearLayout>
+ </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

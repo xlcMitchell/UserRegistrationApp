@@ -28,9 +28,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background_color="@color/line_color"
+        android:background="@color/line_color"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom = "2dp"/>
+        android:layout_marginBottom="2dp"/>
 
 
 </LinearLayout>
@@ -46,18 +46,18 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:margin_left="10dp"
+    android:layout_marginLeft="10dp"
     android:layout_marginTop="5dp"
     android:layout_marginRight="10dp">
     <TextView
-        android:layout_width = "wrap_content"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:text="First Name"
         android:textSize="20dp"
         android:textStyle="bold"/>
     <TextView
-        android:layout_width = "wrap_content"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:text="*"
@@ -75,18 +75,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:margin_left="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="10dp">
         <TextView
-            android:layout_width = "wrap_content"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:text="Last Name"
             android:textSize="20dp"
             android:textStyle="bold"/>
         <TextView
-            android:layout_width = "wrap_content"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:text="*"
@@ -108,7 +108,7 @@
          android:layout_height="wrap_content"
          android:layout_marginTop="5dp"
          android:layout_marginRight="10dp"
-         android:margin_left="10dp">
+         android:layout_marginLeft="10dp">
 
          <TextView
              android:layout_width="wrap_content"
@@ -134,50 +134,55 @@
              android:layout_height="400dp" />
 
      </LinearLayout>
+
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:margin_left="10dp"
+         android:layout_marginLeft="10dp"
          android:layout_marginTop="5dp"
-         android:layout_marginRight="10dp">
+         android:layout_marginRight="10dp"
+        >
+
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="Mobile"
              android:textSize="20dp"
-             android:textStyle="bold"/>
+             android:textStyle="bold" />
+
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="*"
              android:textColor="@color/line_color"
              android:textSize="20dp"
-             android:textStyle="bold"/>
+             android:textStyle="bold" />
 
          <EditText
              android:id="@+id/regMobile"
-             android:layout_height="wrap_content"
              android:layout_width="match_parent"
-             android:hint="First Name"/>
+             android:layout_height="wrap_content"
+             android:hint="Mobile"
+             android:inputType="phone" />
      </LinearLayout>
 
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:margin_left="10dp"
+         android:layout_marginLeft="10dp"
          android:layout_marginTop="5dp"
          android:layout_marginRight="10dp">
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="Address"
              android:textSize="20dp"
              android:textStyle="bold"/>
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="*"
@@ -195,18 +200,18 @@
      <LinearLayout
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:margin_left="10dp"
+         android:layout_marginLeft="10dp"
          android:layout_marginTop="5dp"
          android:layout_marginRight="10dp">
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="Email"
              android:textSize="20dp"
              android:textStyle="bold"/>
          <TextView
-             android:layout_width = "wrap_content"
+             android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginEnd="10dp"
              android:text="*"

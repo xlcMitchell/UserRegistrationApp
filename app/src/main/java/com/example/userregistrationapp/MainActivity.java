@@ -5,11 +5,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.userregistrationapp.Data.User;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -36,17 +40,25 @@ public class MainActivity extends AppCompatActivity {
         dateOfBirthDP = findViewById(R.id.RegUserDate);
         regButton = findViewById(R.id.userRegButton);
         resetButton = findViewById(R.id.userResetButton);
-
+        //---- Reset Button On Click Listener----
         resetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 resetUserData();
             }
         });
+
+        //---- Register Button On Click Listener----
+        regButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registerUser();
+            }
+        });
     }
 
 
-    /*  FUNCTION TO COLLECT USER DATA
+    // --- FUNCTION TO COLLECT USER DATA ---
     private User getUserData() {
         User user = null;
         String fName, lName, mobile, address, email, password1, password2;
@@ -70,7 +82,17 @@ public class MainActivity extends AppCompatActivity {
 
         return user;
     }
-   */
+
+    private void registerUser(){
+        User user = getUserData();
+
+        if(user == null){
+            Toast.makeText(this,"User data validation failed",Toast.LENGTH_LONG).show();
+        }else{
+            Toast.makeText(this,user.toString(),Toast.LENGTH_LONG).show();
+        }
+    }
+
     private void resetUserData(){
         firstNameET.setText("");
         lastNameET.setText("");

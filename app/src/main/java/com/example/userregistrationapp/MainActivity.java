@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // ...
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         firstNameET = findViewById(R.id.regFirstName);
         lastNameET = findViewById(R.id.regLastName);
         mobileET = findViewById(R.id.regMobile);
